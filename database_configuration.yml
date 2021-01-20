@@ -1,0 +1,32 @@
+# ------------------------------------------------------------------------------
+# Directorios de trabajo
+# ------------------------------------------------------------------------------
+dir:  
+  base: "/Users/alessiobocco/Documents/Documentos/Proyecto IAI/Articulos/Base de datos/base_datos_argentina"
+  shapefiles: "./db/shapefiles"
+  raster: 
+    worldclim: 
+      bio: "./db/raster/worldclim/bio"
+      prcp: "./db/raster/worldclim/prcp"
+    dem: "./db/raster/dem"
+  datos: "./db/datos"
+  resultados: 
+    datos: "./db/resultados/homogenea/datos"
+    exploratorios: "./db/resultados/homogenea/exploratorio"
+    definitivos: "./db/resultados/homogenea/definitivo"
+    shapefiles: "./db/resultados/shapefiles"
+    graficos: "./db/resultados/graficos"
+# ------------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------------
+# URLs de descarga
+# -----------------------------------------------------------------------------------
+download:
+  prcp:
+    url: "http://biogeo.ucdavis.edu/data/worldclim/v2.1/base/"
+    file: "wc2.1_30s_prec"
+  bio: 
+    url: "https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/"
+    file: "wc2.1_30s_bio"
+  max.retries: 5
+# -----------------------------------------------------------------------------------
