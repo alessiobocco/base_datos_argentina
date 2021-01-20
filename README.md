@@ -1,1 +1,1 @@
-# base_datos_argentina
+Homogenización de la base de datos de Córdoba (Argentina)
