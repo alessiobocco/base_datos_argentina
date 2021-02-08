@@ -1,0 +1,9 @@
+
+HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
+
+=========== Homogenization of Prcp-1, 1941-2015. (Tue Nov 24 20:05:05 2020)
+
+Parameters: varcli=Prcp-1 anyi=1941 anyf=2015 suf=NA nm=NA nref=10,10,4 std=2 swa=NA ndec=1 dz.max=6 dz.min=-6 wd=75,75,50 snht1=20 snht2=25 tol=0.02 maxdif=0.05 mxdif=0.05 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=4 ini=NA na.strings=NA vmin=NA vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=FALSE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
+
+Data matrix: 900 data x 371 stations
+Computing inter-station distances:  1  2  3  4

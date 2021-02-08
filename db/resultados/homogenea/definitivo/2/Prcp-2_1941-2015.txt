@@ -1,0 +1,513 @@
+
+HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
+
+=========== Homogenization of Prcp-2, 1941-2015. (Tue Dec  1 16:26:48 2020)
+
+Parameters: varcli=Prcp-2 anyi=1941 anyf=2015 suf=NA nm=NA nref=10,10,4 std=2 swa=NA ndec=1 dz.max=8 dz.min=-7 wd=75,75,50 snht1=20 snht2=25 tol=0.02 maxdif=0.05 mxdif=0.05 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=4 ini=NA na.strings=NA vmin=NA vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=FALSE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
+
+Data matrix: 900 data x 132 stations
+Computing inter-station distances:  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  130  131
+
+
+========== STAGE 1 (SNHT on overlapping temporal windows) ===========
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S10(10) 1977-12-01: 500 -> 260.1 (8.41)
+S17(17) 1991-12-01: 0 -> 224.9 (-9.43)
+S21(21) 2014-04-01: 323.6 -> 127.2 (8.67)
+S37(36) 1999-03-01: 485.7 -> 240.1 (8.76)
+S39(38) 2000-05-01: 33.4 -> 227.3 (-7.36)
+S42(41) 1973-02-01: 559 -> 205.5 (10.62)
+S59(42) 2007-03-01: 30 -> 307.8 (-9.85)
+S284(53) 2004-01-01: 411 -> 120 (10.62)
+S301(64) 1948-09-01: 385 -> 45.6 (9.45)
+S310(69) 2008-01-01: 350 -> 120.9 (8.8)
+S335(76) 2004-01-01: 442.5 -> 51.6 (11.87)
+S370(78) 1975-03-01: 457 -> 232.2 (9.07)
+S385(79) 1944-03-01: 420 -> 96.9 (9.83)
+S417(83) 1977-12-01: 22 -> 252.2 (-8.07)
+S421(85) 1978-03-01: 431 -> 207.5 (8.17)
+S438(91) 2012-10-01: 382 -> 185.8 (8.68)
+S442(92) 2004-05-01: 232 -> 89.3 (8.6)
+S451(96) 2012-02-01: 283 -> 74.3 (8.16)
+S497(107) 2007-03-01: 351.5 -> 168.4 (8.73)
+S526(112) 1999-03-01: 143 -> 348.4 (-7.48)
+S535(116) 2000-10-01: 0 -> 188.8 (-7.92)
+S535(116) 2014-04-01: 8 -> 178.2 (-7.14)
+S536(117) 1978-11-01: 0 -> 174.7 (-7.57)
+S536(117) 1978-12-01: 0 -> 215.5 (-9.34)
+S536(117) 1997-04-01: 0 -> 168.9 (-7.32)
+S543(121) 1983-11-01: 459 -> 68.9 (11.2)
+S543(121) 1983-12-01: 493 -> 188 (8.75)
+S545(122) 1999-03-01: 160 -> 353 (-7.97)
+S552(127) 1985-01-01: 0 -> 194.1 (-7.76)
+S557(129) 2001-02-01: 381 -> 111.4 (10.01)
+S562(131) 2010-03-01: 734 -> 122.4 (14.6)
+S562(131) 2012-11-01: 481 -> 108.6 (8.89)
+S565(132) 1997-12-01: 303 -> 495.7 (-8.67)
+
+Performing shift analysis on the 132 series...
+
+S24(23) breaks at 1960-03-01 (36.0)
+S548(125) breaks at 1998-11-01 (33.5)
+S524(111) breaks at 1999-03-01 (33.4)
+S8(8) breaks at 1971-04-01 (33.3)
+S271(45) breaks at 1981-04-01 (30.5)
+S370(78) breaks at 1988-03-01 (27.9)
+S455(97) breaks at 1999-10-01 (26.6)
+
+Update number of series:  132 + 7 = 139 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S24(23) 1995-04-01: 482.1 -> 171.9 (8.57)
+S559(130) 1985-07-01: 0 -> 190.3 (-7)
+
+Performing shift analysis on the 139 series...
+
+S24-2(133) breaks at 1956-10-01 (40.2)
+S484(101) breaks at 1960-09-01 (25.8)
+
+Update number of series:  139 + 2 = 141 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 141 series...
+
+S41(40) breaks at 2001-04-01 (25.8)
+S415(82) breaks at 1999-12-01 (25.1)
+S547(124) breaks at 2008-04-01 (25.0)
+S301(64) breaks at 1955-10-01 (24.9)
+S40(39) breaks at 2001-04-01 (24.8)
+S549(126) breaks at 1956-05-01 (23.7)
+S545(122) breaks at 2010-01-01 (23.6)
+S552(127) breaks at 1984-06-01 (22.7)
+S548-2(134) breaks at 1981-06-01 (22.3)
+S524(111) breaks at 2004-08-01 (22.3)
+S36(35) breaks at 2012-01-01 (21.6)
+S524-2(135) breaks at 1986-05-01 (21.2)
+S276(47) breaks at 1986-04-01 (20.4)
+S20(20) breaks at 1986-05-01 (20.4)
+S272(46) breaks at 1969-04-01 (20.2)
+
+Update number of series:  141 + 15 = 156 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S415(82) 2000-01-01: 315 -> 148.9 (8.72)
+S20-2(155) 1986-01-01: 372.8 -> 194.3 (8.11)
+S20-2(155) 1986-04-01: 286.9 -> 105.2 (8.26)
+
+Performing shift analysis on the 156 series...
+
+S547-2(144) breaks at 2007-09-01 (28.5) Fragment with less than 12 data DELETED
+S272(46) breaks at 1999-12-01 (28.0)
+S415(82) breaks at 2000-06-01 (21.8) Fragment with less than 12 data DELETED
+
+Update number of series:  156 + 1 = 157 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 157 series...
+
+S549-2(147) breaks at 1956-02-01 (20.6) Fragment with less than 12 data DELETEDComputation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 157 series...
+
+
+========== STAGE 2 (SNHT on the whole series) =======================
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 157 series...
+
+S543(121) breaks at 2000-01-01 (88.0)
+S291(57) breaks at 2000-01-01 (56.1)
+
+Update number of series:  157 + 2 = 159 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 159 series...
+
+S8-2(136) breaks at 1971-01-01 (47.3) Fragment with less than 12 data DELETED
+S532(113) breaks at 2010-09-01 (45.7)
+S281(51) breaks at 1999-02-01 (44.1)
+S538(119) breaks at 1999-01-01 (40.9)
+S323(75) breaks at 1959-09-01 (38.8)
+S548-3(150) breaks at 1980-10-01 (37.9) Fragment with less than 12 data DELETED
+S280(50) breaks at 1959-09-01 (37.2)
+
+Update number of series:  159 + 5 = 164 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 164 series...
+
+S545-2(148) breaks at 2001-03-01 (37.8)
+S2(2) breaks at 2011-11-01 (36.5)
+S278(49) breaks at 2003-02-01 (35.2)
+S41-2(142) breaks at 2001-01-01 (33.6) Fragment with less than 12 data DELETED
+S286(54) breaks at 1997-12-01 (33.4)
+S552(127) breaks at 1988-10-01 (32.2)
+S521(110) breaks at 1999-02-01 (30.8)
+S319(74) breaks at 2003-11-01 (29.7)
+
+Update number of series:  164 + 7 = 171 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S2-2(166) 1984-02-01: 258.025 -> 425.9 (-7.46)
+
+Performing shift analysis on the 171 series...
+
+S314(71) breaks at 2006-12-01 (29.8)
+S483(100) breaks at 2013-10-01 (27.9)
+S557(129) breaks at 2009-12-01 (27.8)
+S537(118) breaks at 2003-01-01 (27.7)
+S271-2(137) breaks at 1981-01-01 (26.3) Fragment with less than 12 data DELETED
+S287(55) breaks at 2012-02-01 (25.9)
+S312(70) breaks at 1996-03-01 (25.5)
+S276-2(154) breaks at 1986-01-01 (25.0) Fragment with less than 12 data DELETED
+
+Update number of series:  171 + 6 = 177 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S537-2(175) 1997-12-01: 660 -> 457 (8.07)
+
+Performing shift analysis on the 177 series...
+
+
+========== STAGE 3 (Final computation of all missing data) ==========
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+
+The following lines will have one of these formats:
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+  Iteration Max.data.difference (Station_code)
+S12(12) 2007-03-01: 250.12 -> 590.5 (-9.33)
+S38(37) 2012-02-01: 0 -> 238.9 (-7.16)
+S280(50) 1977-01-01: 34 -> 217.1 (-7.23)
+S487(104) 2015-02-01: 74 -> 214.6 (-7.01)
+S41-2(142) 1959-03-01: 143.216 -> 490.3 (-9.02)
+S548-3(150) 1976-12-01: 0 -> 159.2 (-7.06)
+S545-3(165) 1997-12-01: 316 -> 476.9 (-7.43)
+S38(37) 2000-10-01: 26.8 -> 260.2 (-7.19)
+S438(91) 1984-02-01: 227.92 -> 415.2 (-7)
+S41-2(142) 1959-06-01: 97.971 -> 355 (-7.06)
+2 257.066 (S41-2)
+3 152.289 (S41)
+4 3.196 (S545)
+5 3.026 (S545)
+6 2.864 (S545)
+7 2.71 (S545)
+8 2.563 (S545)
+9 2.424 (S545)
+10 2.293 (S545)
+11 2.169 (S545)
+12 2.051 (S545)
+13 1.939 (S545)
+14 1.833 (S545)
+15 1.733 (S545)
+16 1.639 (S545)
+17 1.549 (S545)
+18 1.464 (S545)
+19 1.384 (S545)
+20 1.308 (S545)
+21 1.236 (S545)
+22 1.168 (S545)
+23 1.104 (S545)
+24 1.043 (S545)
+25 0.986 (S545)
+26 0.932 (S545)
+27 0.88 (S545)
+28 0.832 (S545)
+29 0.786 (S545)
+30 0.743 (S545)
+31 0.701 (S545)
+32 0.663 (S545)
+33 0.626 (S545)
+34 0.591 (S545)
+35 0.559 (S545)
+36 0.528 (S545)
+37 0.498 (S545)
+38 0.471 (S545)
+39 0.445 (S545)
+40 0.42 (S545)
+41 0.397 (S545)
+42 0.375 (S545)
+43 0.354 (S545)
+44 0.334 (S545)
+45 0.315 (S545)
+46 0.298 (S545)
+47 0.281 (S545)
+48 0.266 (S545)
+49 0.251 (S545)
+50 0.237 (S545)
+51 0.224 (S545)
+52 0.211 (S545)
+53 0.199 (S545)
+54 0.188 (S545)
+55 0.178 (S545)
+56 0.168 (S545)
+57 -0.16 (S552-3)
+58 -0.152 (S552-3)
+59 -0.145 (S552-3)
+60 -0.138 (S552-3)
+61 -0.132 (S552-3)
+62 -0.126 (S552-3)
+63 -0.12 (S552-3)
+64 -0.114 (S552-3)
+65 -0.109 (S552-3)
+66 -0.103 (S552-3)
+67 -0.098 (S552-3)
+68 -0.094 (S552-3)
+69 -0.089 (S552-3)
+70 -0.085 (S552-3)
+71 -0.081 (S552-3)
+72 -0.077 (S552-3)
+73 -0.073 (S552-3)
+74 -0.07 (S552-3)
+75 -0.067 (S552-3)
+76 -0.063 (S552-3)
+77 -0.06 (S552-3)
+78 -0.058 (S552-3)
+79 -0.055 (S552-3)
+80 -0.052 (S552-3)
+81 -0.05 (S552-3)
+
+Last series readjustment (please, be patient...)
+
+======== End of the homogenization process, after 10.9 mins 
+
+----------- Final computations:
+
+ACmx: Station maximum absolute autocorrelations of anomalies
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+ 0.0600  0.1000  0.1200  0.1451  0.1700  0.6900       1 
+
+SNHT: Standard normal homogeneity test (on anomaly series)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.100   4.700   7.900   9.403  12.800  29.500 
+
+RMSE: Root mean squared error of the estimated data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  12.84   23.98   28.47   29.98   33.43   79.37 
+
+POD: Percentage of original data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   3.00   40.00   99.00   74.18  100.00  100.00 
+
+    ACmx SNHT RMSE POD Code   Name                                         
+1   0.07  9.1 40.7 100 S1     La Lucila_San Cristóbal                      
+2   0.25  1.5 31.2   5 S2     Escuela Nº 486_Carcarañá                     
+3   0.10  8.6 36.1 100 S3     Sociedad Rural Rufino_Rufino                 
+4   0.06  7.9 53.3 100 S4     Margarita_Margarita                          
+5   0.06 17.3 27.8 100 S5     María Suana_María Suana                      
+6   0.08  6.3 31.9 100 S6     AER Las Rosas_Las Rosas                      
+7   0.07  9.3 29.8 100 S7     AER Carlos Pellegrini_Carlos Pellegrini      
+8   0.10  9.7 35.1  59 S8     AER Casilda_Casilda                          
+9   0.10 17.6 30.2 100 S9     Estancia Loreto_Maggiolo                     
+10  0.12  4.7 23.5  99 S10    Piamonte_Piamonte                            
+11  0.08  4.3 29.8 100 S11    Ceres Aero_Ceres                             
+12  0.14  9.4 34.9  99 S12    Sunchales Aero_Sunchales                     
+13  0.07  3.7 38.4 100 S13    Rafaela INTA_Rafaela                         
+14  0.12  4.4 30.8 100 S14    Rafaela Aero_Rafaela                         
+15  0.12  5.3 32.9 100 S15    Sauce Viejo Aero_Sauce Viejo                 
+16  0.14 15.6 27.5 100 S16    El Trébol Aero_El Trebol                     
+17  0.07  6.2 24.4  99 S17    Venado Tuerto Aero_Venado Tuerto             
+18  0.09  7.9 59.1 100 S18    Reconquista Aero_Reconquista                 
+19  0.11  3.8 31.2 100 S19    Oliveros INTA_Oliveros                       
+20  0.11  8.9 26.1  39 S20    UNR_Zavalla                                  
+21  0.09 11.2 21.9  99 S21    Cooperativa San Guillermo_San Guillermo      
+22  0.11  9.5 29.3 100 S23    Rosario Aero_Rosario                         
+23  0.10 10.8 32.3  74 S24    Pergamino INTA_Pergamino                     
+24  0.07  6.9 36.1 100 S25    Cosufi_General Pinto                         
+25  0.23  6.6 42.5 100 S26    Estancia San Carlos_Bolívar                  
+26  0.25  1.1 79.3 100 S27    Estnacia La Cassina_Diareaux                 
+27  0.07 12.8 31.8 100 S28    Sociedad Rural Rivadavia_Rivadavia           
+28  0.17  4.3 40.3 100 S29    Sociedad Rural Henderson_Henderson           
+29  0.39  5.1 70.9 100 S30    General Villegas INTA_General Villegas       
+30  0.15  7.7 44.6 100 S31    Sociedad Rural Roque perez_Roque Perez       
+31  0.11 10.7 45.1 100 S32    Pigue Aero_Pigüe                             
+32  0.33  1.3 79.4 100 S33    Bolívar Aero_Bolivar                         
+33  0.10  6.7 27.1 100 S34    AER Lincoln_Lincoln                          
+34  0.10  7.2 34.0 100 S35    Cañada Seca_Cañada Seca                      
+35  0.23  7.9 21.1   5 S36    AER 9 de Julio_9 de Julio                    
+36  0.07  4.6 26.4  99 S37    Campo Ottino_Cañada Seca                     
+37  0.14 12.6 31.6  99 S38    Trenque Lauquen Aero_Trenque Lauquen         
+38  0.17  7.5 19.2  99 S39    9 de Julio Aero_9 de Julio                   
+39  0.15  5.0 34.2  19 S40    Junin Aero_Junín                             
+40  0.20  1.7 31.9  19 S41    AER San Pedro_San Pedro                      
+41  0.11  3.1 32.7  99 S42    Pehuajó Aero_Pehuajo                         
+42  0.08  7.4 29.8  99 S59    Colonia Alpina_Colonia Alpina                
+43  0.11  9.4 42.7 100 S99    Selva_Selva                                  
+44  0.12 10.3 20.5 100 S270   Estancia La Magdalena_La Carlota             
+45  0.12  6.0 36.9  46 S271   Cooperativa Sudeste_Bell Ville               
+46  0.20  2.1 14.8  21 S272   Estancia La Vizcachera_San Joaquín           
+47  0.15 17.2 24.5  39 S276   Estancia Los 13_Reducción                    
+48  0.13 25.6 28.5 100 S277   Italo_Italo                                  
+49  0.29  9.0 35.0  17 S278   Isla Verde_Isla Verde                        
+50  0.15  2.8 24.3  75 S280   Cacique Bravo_Las Acequias                   
+51  0.23 16.5 33.4  22 S281   El Montecito_Santa Eufemia                   
+52  0.06  6.4 33.5 100 S283   Levalle_Levalle                              
+53  0.13  8.1 30.6  99 S284   La Cesira_La Cesira                          
+54  0.10  2.1 42.2  24 S286   La Amalia_La Amalia                          
+55  0.24  3.4 37.6   5 S287   Pueblo Italiano_Pueblo Italiano              
+56  0.11 14.0 23.4 100 S290   AER Brinkmann_Brinkmann                      
+57  0.19  5.2 40.5  21 S291   UTN San Francisco_San Francisco              
+58  0.33  2.5 64.1 100 S293   AER Noetinger_Noetinger                      
+59  0.12 21.8 25.1 100 S296   AER La Carlota_La Carlota                    
+60  0.11  5.6 26.2 100 S297   AGD_La Carlota                               
+61  0.08  6.2 26.9 100 S298   AER Canals_Canals                            
+62  0.16  5.7 35.8 100 S299   AER Ucacha_Ucacha                            
+63  0.08  8.5 29.9 100 S300   AER Arias_Arias                              
+64  0.11 16.1 36.4  80 S301   AER Justiniano Posse_Justiniano Posse        
+65  0.13 24.7 25.5 100 S303   AER Marcos Juarez_Marcos Juárez              
+66  0.10 13.7 22.8 100 S305   Estancia Don Carlos_Alejo Ledesma            
+67  0.09 13.3 30.4 100 S306   Alejos Ledesma_Alejo Ledesma                 
+68  0.09  5.9 27.2 100 S308   AER Buchardo_Buchardo                        
+69  0.08 10.5 25.0  99 S310   EAS Ambrosio Olmos_San Ambrosio              
+70  0.17  4.5 38.1  26 S312   Bengolea_Bengolea                            
+71  0.19  5.1 29.8  12 S314   Marcos Juarez INTA_Marcos Juárez             
+72  0.07  3.7 32.7 100 S317   Rio Cuarto Aero_Rio Cuarto                   
+73  0.08 20.1 31.8 100 S318   Laboulaye Aero_Laboulaye                     
+74  0.21  3.2 44.0  16 S319   Marcos Juarez Aero_Marcos Juárez             
+75  0.16 24.7 26.4  75 S323   Hermanos Tognato_Villa Herminia              
+76  0.11  2.6 29.1  99 S335   El Fortín_El Fortín                          
+77  0.12 19.6 36.6 100 S359   Morteros_Morteros                            
+78  0.12  3.1 13.2  37 S370   Balnearia_Balnearia                          
+79  0.10  8.3 31.2  99 S385   El Tío_El Tío                                
+80  0.15  2.5 27.6 100 S410   San Antonio de Litin_San Antonia de Litin    
+81  0.12 21.0 22.4 100 S414   Ordoñez_Ordoñez                              
+82  0.15  3.2 19.3  20 S415   Justiniano Posse_Justiniano Posse            
+83  0.08  3.5 30.9  99 S417   Etruria_Etruria                              
+84  0.22  4.7 51.9 100 S419   Ucacha_Ucacha                                
+85  0.07  8.3 26.1  99 S421   Corral de Bustos_Corral de Bustos            
+86  0.11  4.5 20.3 100 S423   Arias_Arias                                  
+87  0.09 12.0 19.0 100 S425   Pavin_Pavin                                  
+88  0.09 11.2 20.2 100 S426   Pacheco de Melo_Pacheco de Melo              
+89  0.12  3.2 21.2 100 S434   San Joaquín_San Joaquín                      
+90  0.12 15.3 23.6 100 S435   Bouchard_Bouchard                            
+91  0.13 13.7 26.1  99 S438   Burmeister_Burmeister                        
+92  0.12  7.2 18.7  99 S442   Alejandro Roca_Alejandro Roca                
+93  0.13  9.6 32.1 100 S444   Cruz Alta_Cruz Alta                          
+94  0.13  8.4 22.6 100 S449   Freyre_Freyre                                
+95  0.09  8.7 26.1 100 S450   Las Varas_Las Varas                          
+96  0.20 13.2 23.0  99 S451   Porteña_Porteña                              
+97  0.12 18.8 35.4  21 S455   Idiázabal_Idiazabal                          
+98  0.14 11.8 32.2 100 S456   Monte Maíz_Monte Maíz                        
+99  0.15 12.5 23.9 100 S475   Las Varillas_Las Varillas                    
+100   NA  4.8 31.5   3 S483   Huanchilla_Huanchilla                        
+101 0.14 14.1 31.5  73 S484   Olaeta_Olaeta                                
+102 0.13  1.9 31.0 100 S485   Guatimozín_Guatimozín                        
+103 0.12  9.0 32.1 100 S486   Leones_Leones                                
+104 0.07 29.5 19.6  99 S487   Monte Buey_Monte Buey                        
+105 0.15  8.8 23.6 100 S488   Melo_Melo                                    
+106 0.21  1.6 35.1 100 S489   Serrano_Serrano                              
+107 0.16  9.1 27.3  99 S497   Chazon_Chazon                                
+108 0.11  6.8 35.1 100 S503   Pascanas_Pascanas                            
+109 0.08 16.6 27.1 100 S520   Guatimozín ZR_Guatimozin                     
+110 0.13  7.4 38.5  22 S521   Las Totoras_Canals                           
+111 0.26  3.8 30.0  15 S524   Laboulaye_Laboulaye                          
+112 0.10 26.4 27.8  99 S526   General Pico Aero_General Pico               
+113 0.24  6.2 30.3   7 S532   Coronel Hilario Lagos_Coronel Hilario Lagos  
+114 0.15 21.6 24.7 100 S533   Sarah_Sarah                                  
+115 0.12 13.3 23.7 100 S534   Intendente Alvear_Intendente Alvear          
+116 0.12 17.2 22.7  99 S535   Ceballos_Ceballos                            
+117 0.09  7.8 20.3  99 S536   Ojeda_Ojeda                                  
+118 0.14  4.6 32.0  17 S537   Falucho_Falucho                              
+119 0.21 11.8 26.7  22 S538   Alta Italia_Alta Italia                      
+120 0.12 14.5 24.9 100 S539   Embajador Martini_Embajador Martini          
+121 0.21  5.1 40.4  21 S543   Adolfo Von Praet_Adolfo Van Praet            
+122 0.46 14.4 30.4   8 S545   Vértiz_Vértiz                                
+123 0.08  7.7 24.7 100 S546   Speluzzi_Speluzzi                            
+124 0.19  4.1 27.2  10 S547   Trebolares_Trebolares                        
+125 0.22  9.8 38.7  22 S548   Dorila_Dorila                                
+126 0.11 28.1 28.7  79 S549   Agustoni_Agustoni                            
+127 0.09  6.3 24.2  36 S552   Trenel_Trenel                                
+128 0.06 10.2 24.0 100 S553   Metileo_Metileo                              
+129 0.32  3.9 30.0   8 S557   Monte Nievas_Monte Nievas                    
+130 0.09 12.2 26.9  99 S559   Villa Marisol _Villa Marisol                 
+131 0.10  7.2 34.4  99 S562   Catrilo_Catrilo                              
+132 0.10 10.7 21.5  99 S565   Bernardo Larroude_Bernardo Larroude          
+133 0.69 14.8 36.6   4 S24-2  Pergamino INTA_Pergamino-2                   
+134 0.20 13.7 25.3  23 S548-2 Dorila_Dorila-2                              
+135 0.25  6.8 17.6  17 S524-2 Laboulaye_Laboulaye-2                        
+136 0.09 13.3 31.5  40 S8-2   AER Casilda_Casilda-2                        
+137 0.14  5.0 34.4  53 S271-2 Cooperativa Sudeste_Bell Ville-2             
+138 0.09 12.4 30.7  62 S370-2 Balnearia_Balnearia-2                        
+139 0.17  3.4 19.9  78 S455-2 Idiázabal_Idiazabal-2                        
+140 0.12  6.5 33.4  21 S24-3  Pergamino INTA_Pergamino-3                   
+141 0.42  5.6 19.5  26 S484-2 Olaeta_Olaeta-2                              
+142 0.09  2.6 35.5  79 S41-2  AER San Pedro_San Pedro-2                    
+143 0.12  4.0 20.3  78 S415-2 Justiniano Posse_Justiniano Posse-2          
+144 0.10 12.0 24.0  88 S547-2 Trebolares_Trebolares-2                      
+145 0.15  2.2 23.1  19 S301-2 AER Justiniano Posse_Justiniano Posse-2      
+146 0.08 15.5 38.8  80 S40-2  Junin Aero_Junín-2                           
+147 0.22  7.7 21.9  20 S549-2 Agustoni_Agustoni-2                          
+148 0.22  2.6 24.8  11 S545-2 Vértiz_Vértiz-2                              
+149 0.16 22.7 20.2  57 S552-2 Trenel_Trenel-2                              
+150 0.12  5.8 21.1  52 S548-3 Dorila_Dorila-3                              
+151 0.35  6.4 29.7   7 S524-3 Laboulaye_Laboulaye-3                        
+152 0.12  8.1 20.3  94 S36-2  AER 9 de Julio_9 de Julio-2                  
+153 0.20  9.0 25.3  60 S524-4 Laboulaye_Laboulaye-4                        
+154 0.18 18.7 27.5  60 S276-2 Estancia Los 13_Reducción-2                  
+155 0.11 14.5 20.0  60 S20-2  UNR_Zavalla-2                                
+156 0.13  7.0 12.8  37 S272-2 Estancia La Vizcachera_San Joaquín-2         
+157 0.17 16.1 37.7  40 S272-3 Estancia La Vizcachera_San Joaquín-3         
+158 0.11 17.9 22.3  78 S543-2 Adolfo Von Praet_Adolfo Van Praet-2          
+159 0.10  4.2 27.6  78 S291-2 UTN San Francisco_San Francisco-2            
+160 0.10  5.8 25.6  92 S532-2 Coronel Hilario Lagos_Coronel Hilario Lagos-2
+161 0.10 15.6 26.7  77 S281-2 El Montecito_Santa Eufemia-2                 
+162 0.12  3.5 17.9  77 S538-2 Alta Italia_Alta Italia-2                    
+163 0.25 12.6 22.9  24 S323-2 Hermanos Tognato_Villa Herminia-2            
+164 0.25 12.0 25.1  24 S280-2 Cacique Bravo_Las Acequias-2                 
+165 0.08  2.6 20.8  80 S545-3 Vértiz_Vértiz-3                              
+166 0.10  7.1 28.1  94 S2-2   Escuela Nº 486_Carcarañá-2                   
+ [ reached 'max' / getOption("max.print") -- omitted 11 rows ]
+
+----------- Generated output files: -------------------------
+
+Prcp-2_1941-2015.txt :  This text output 
+Prcp-2_1941-2015_out.csv :  List of corrected outliers 
+Prcp-2_1941-2015_brk.csv :  List of corrected breaks 
+Prcp-2_1941-2015.pdf :  Diagnostic graphics 
+Prcp-2_1941-2015.rda :  Homogenization results. Postprocess with (examples):
+   dahstat('Prcp-2',1941,2015) #get averages in file Prcp-2_1941-2015-me.csv 
+   dahstat('Prcp-2',1941,2015,stat='tnd') #get OLS trends and their p-values 
+   dahgrid('Prcp-2',1941,2015,grid=YOURGRID) #get homogenized grids 
+   ... (See other options in the package documentation)
+

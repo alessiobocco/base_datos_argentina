@@ -1,0 +1,612 @@
+
+HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
+
+=========== Homogenization of Prcp-3, 1941-2015. (Tue Dec  1 16:37:42 2020)
+
+Parameters: varcli=Prcp-3 anyi=1941 anyf=2015 suf=NA nm=NA nref=10,10,4 std=2 swa=NA ndec=1 dz.max=10 dz.min=-8 wd=75,75,50 snht1=20 snht2=20 tol=0.02 maxdif=0.05 mxdif=0.05 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=4 ini=NA na.strings=NA vmin=NA vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=FALSE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
+
+Data matrix: 900 data x 61 stations
+
+-------------------------------------------
+Stations in the 7 clusters:
+
+$`1`
+      Z Code                                    Name
+1  1250 S119                       El Rodeo_El Rodeo
+3  1455 S121 Las Piedras Blancas_Las Piedras Blancas
+4  1281 S122             Los Castillos_Los Castillos
+5  1114 S123                 Los Varelas_Los Varelas
+6  1170 S124                         Singuil_Singuil
+7  1070 S125                           Colpes_Colpes
+8  1014 S126                       Huaycama_Huaycama
+9  1155 S128               La Rinconada_La Rinconada
+13 1183 S151                   El Potrero_El Potrero
+15 1241 S153                             Belen_Belen
+22 2689 S160                 Papa Chacra_Papa Chacra
+26 2021 S164             Las Barrancas_Las Barrancas
+35 1620 S231                         Joyango_Joyango
+36 1542 S232                       Michango_Michango
+37 1934 S233                         Mitquin_Mitquin
+38 1574 S234                           Rincon_Rincon
+41 3000 S237                     La Hoyada_La Hoyada
+58 1500 S261                     Las Papas_Las Papas
+60 3391 S263       Rincón de Médano_Rincón de Médano
+61 1575 S264                 Villa Luján_Villa Luján
+
+$`2`
+      Z Code                      Name
+2  2010 S120             Humaya_Humaya
+55 2816 S257 Aguas Negras_Aguas Negras
+
+$`3`
+      Z Code                          Name
+10 1609 S129         Las Juntas_Las Juntas
+11  943 S149       Agua Salada_Agua Salada
+14 1080 S152       Villa Villa_Villa Villa
+17 1405 S155           Culampaja_Culampaja
+31  635 S175       Trampasacha_Trampasacha
+32 1591 S186         El Rosario_El Rosario
+33 1736 S202       La Aguadita_La Aguadita
+34 1254 S222             Balcozna_Balcozna
+47 1642 S248 Costa de Reyes_Costa de Reyes
+57 1686 S260             La Palca_La Palca
+
+$`4`
+      Z Code                             Name
+12 1440 S150                      Amano_Amano
+28 1799 S169              La Mesada_La Mesada
+29  802 S170            Las Palmas_Las Palmas
+30 1673 S172 Los Nacimientos_Los Nacimientos2
+
+$`5`
+      Z Code                            Name
+16 2067 S154   Corral Quemado_Corral Quemado
+18 1987 S156             Jacipunco_Jacipunco
+19 1471 S157           La Cienaga_La Cienaga
+25 3413 S163     Laguna Blanca_Laguna Blanca
+27 2022 S165             Villa Vil_Villa Vil
+39 2495 S235 Campo de Frayle_Campo de Frayle
+43 2899 S239               Toroyaco_Toroyaco
+44 1445 S245           Agua Clara_Agua Clara
+45 1990 S246               Antinaco_Antinaco
+49 1437 S250             El Puesto_El Puesto
+52 2022 S254   Punta del Agua_Punta del Agua
+59 1655 S262         Palo Blanco_Palo Blanco
+
+$`6`
+      Z Code                            Name
+20 1696 S158                 La Toma_La Toma
+21 2077 S159 Los Nacimientos_Los Nacimientos
+23 2023 S161   Pozo de Piedra_Pozo de Piedra
+24 1417 S162               Quimivil_Quimivil
+40 2193 S236              El Cajón_El Cajón2
+42 2184 S238   Pie del Médano_Pie del Médano
+46 1113 S247 Banda de Lucero_Banda de Lucero
+48 1071 S249   Dique Andaluca_Dique Andaluca
+56 3500 S258        Cerro Negro_Cerro Negro2
+
+$`7`
+      Z Code                  Name
+50 1524 S251     Fiambala_Fiambala
+51 1641 S253   Medanitos_Medanitos
+53 1269 S255 Santa Rosa_Santa Rosa
+54 1845 S256           Taton_Taton
+
+---------------------------------------------
+Computing inter-station distances:  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60
+
+
+========== STAGE 1 (SNHT on overlapping temporal windows) ===========
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S120(2) 2000-02-01: 604 -> 170.9 (11.3)
+S121(3) 1984-03-01: 47 -> 304.5 (-9.96)
+S122(4) 1981-02-01: 301 -> 125.1 (10.11)
+S125(7) 1985-11-01: 276 -> 140.8 (11.39)
+S125(7) 1990-02-01: 219 -> 91.8 (10.72)
+S126(8) 1978-03-01: 230.1 -> 79.2 (10.02)
+S129(10) 1985-03-01: 426 -> 107.8 (12.95)
+S154(16) 2011-02-01: 590 -> 63.5 (23.49)
+S155(17) 1992-03-01: 112 -> 27.1 (10.21)
+S155(17) 2006-01-01: 7 -> 81 (-8.9)
+S157(19) 1981-02-01: 168 -> 72.8 (11.02)
+S158(20) 1992-12-01: 270 -> 83.6 (10.85)
+S160(22) 2006-03-01: 335 -> 46.1 (11.3)
+S160(22) 2011-02-01: 198.75 -> 408.4 (-8.2)
+S162(24) 1995-02-01: 364 -> 61.3 (10.06)
+S164(26) 1976-01-01: 366 -> 174.2 (11.04)
+S165(27) 1976-02-01: 360 -> 59.6 (14.88)
+S175(31) 1977-12-01: 537 -> 190.4 (12.36)
+S234(38) 1984-03-01: 297.5 -> 136.2 (10.16)
+S235(39) 2001-02-01: 264 -> 54.6 (12.55)
+S237(41) 2008-01-01: 479 -> 241.2 (12.65)
+S238(42) 1986-12-01: 163.6 -> 41.6 (12.14)
+S238(42) 2000-01-01: 213.5 -> 57.4 (15.55)
+S239(43) 1976-01-01: 289.8 -> 119.6 (11.82)
+S247(46) 1987-01-01: 165.5 -> 50.2 (11.94)
+S250(49) 1987-02-01: 120 -> 14.6 (11.13)
+S254(52) 1984-01-01: 225 -> 90.7 (10.67)
+S256(54) 1979-01-01: 359 -> 97.7 (11)
+S256(54) 2001-02-01: 387 -> 65.8 (13.53)
+S257(55) 1985-02-01: 554 -> 74.1 (16.78)
+S260(57) 1979-01-01: 108.173 -> 240.1 (-8.38)
+S261(58) 1979-01-01: 49.0445 -> 162.8 (-10.83)
+S261(58) 2006-01-01: 52.3565 -> 140.8 (-8.41)
+S263(60) 2001-03-01: 270 -> 90.3 (13.71)
+S264(61) 1988-02-01: 172 -> 44.9 (14.11)
+
+Performing shift analysis on the 61 series...
+
+S249(48) breaks at 2001-04-01 (55.0)
+S172(30) breaks at 1996-01-01 (42.7)
+S246(45) breaks at 2006-04-01 (39.3)
+
+Update number of series:  61 + 3 = 64 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S122(4) 1999-02-01: 245 -> 75.3 (10.19)
+S154(16) 2011-01-01: 234 -> 31.6 (14.23)
+S154(16) 2011-03-01: 177 -> 19.6 (11.07)
+S158(20) 1976-01-01: 321 -> 137.9 (10.99)
+S158(20) 1981-02-01: 309 -> 112.7 (11.78)
+S160(22) 2006-01-01: 55 -> 241.8 (-8.27)
+S164(26) 1981-02-01: 301 -> 129.8 (10.4)
+S165(27) 1984-01-01: 362.5 -> 161.1 (11.57)
+S256(54) 2001-03-01: 261.3 -> 45.7 (11.16)
+S260(57) 2006-01-01: 94.189 -> 225.5 (-8.74)
+S261(58) 1976-01-01: 50.7995 -> 129.5 (-8.58)
+S263(60) 2001-02-01: 203.4 -> 81.1 (10.01)
+
+Performing shift analysis on the 64 series...
+
+S156(18) breaks at 2006-04-01 (35.0)
+S256(54) breaks at 1991-12-01 (34.3)
+S236(40) breaks at 1991-04-01 (28.4)
+S250(49) breaks at 1986-04-01 (28.0)
+S249-2(62) breaks at 2001-01-01 (26.3) Fragment with less than 12 data DELETED
+S149(11) breaks at 2001-04-01 (26.2)
+S169(28) breaks at 2002-04-01 (26.2)
+
+Update number of series:  64 + 6 = 70 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S154(16) 1979-01-01: 206.5 -> 85.2 (10.32)
+S256-2(66) 1976-01-01: 231 -> 82.6 (11.09)
+S256-2(66) 1977-12-01: 201 -> 53.6 (11.01)
+
+Performing shift analysis on the 70 series...
+
+S202(33) breaks at 2006-04-01 (28.7)
+S154(16) breaks at 1976-04-01 (28.2)
+S256(54) breaks at 1999-02-01 (25.7)
+S249-2(62) breaks at 1985-09-01 (25.0)
+S169(28) breaks at 2003-03-01 (24.8) Fragment with less than 12 data DELETED
+S245(44) breaks at 2005-09-01 (24.8)
+
+Update number of series:  70 + 5 = 75 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S260(57) 2004-01-01: 221.5 -> 77.9 (10.18)
+S256-2(66) 1975-01-01: 188 -> 72.5 (11.14)
+S154-2(72) 1975-01-01: 178.5 -> 73.3 (10.68)
+
+Performing shift analysis on the 75 series...
+
+S245(44) breaks at 2006-02-01 (34.7) Fragment with less than 12 data DELETED
+S263(60) breaks at 1999-12-01 (25.4)
+S172(30) breaks at 2001-11-01 (24.5)
+
+Update number of series:  75 + 2 = 77 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S154-2(72) 1976-01-01: 167.5 -> 76.2 (10.85)
+
+Performing shift analysis on the 77 series...
+
+S263(60) breaks at 2000-06-01 (25.2) Fragment with less than 12 data DELETED
+S257(55) breaks at 2003-05-01 (23.9)
+S161(23) breaks at 1976-04-01 (23.2)
+S246-2(64) breaks at 1993-04-01 (23.0)
+S169-2(70) breaks at 1992-11-01 (22.6)
+S222(34) breaks at 1981-05-01 (22.6)
+S123(5) breaks at 2006-04-01 (22.0)
+S124(6) breaks at 2002-05-01 (20.7)
+
+Update number of series:  77 + 7 = 84 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S257(55) 2006-01-01: 94.29 -> 224.5 (-8.34)
+S161-2(79) 1976-01-01: 376.2 -> 182.1 (12.62)
+S222-2(82) 1981-02-01: 425 -> 174.4 (11.76)
+
+Performing shift analysis on the 84 series...
+
+S123-2(83) breaks at 2005-12-01 (42.6) Fragment with less than 12 data DELETED
+S161(23) breaks at 2000-12-01 (25.0)
+
+Update number of series:  84 + 1 = 85 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 85 series...
+
+S161(23) breaks at 2001-03-01 (24.3) Fragment with less than 12 data DELETED
+S161-3(85) breaks at 1990-01-01 (23.8)
+S124-2(84) breaks at 2001-11-01 (22.1) Fragment with less than 12 data DELETED
+
+Update number of series:  85 + 1 = 86 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 86 series...
+
+S124-2(84) breaks at 1946-04-01 (20.1)
+
+Update number of series:  86 + 1 = 87 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 87 series...
+
+
+========== STAGE 2 (SNHT on the whole series) =======================
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 87 series...
+
+S263-2(76) breaks at 1994-11-01 (69.9)
+S236-2(67) breaks at 1991-01-01 (66.4) Fragment with less than 12 data DELETED
+S250-2(68) breaks at 1986-01-01 (57.5) Fragment with less than 12 data DELETED
+S253(51) breaks at 2005-05-01 (57.2)
+S261(58) breaks at 1972-11-01 (56.0)
+
+Update number of series:  87 + 3 = 90 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S247(46) 1986-02-01: 121 -> 29.7 (10.14)
+
+Performing shift analysis on the 90 series...
+
+S246-3(80) breaks at 1983-12-01 (42.2)
+S149-2(69) breaks at 2001-01-01 (41.3) Fragment with less than 12 data DELETED
+S245-2(75) breaks at 1983-11-01 (41.3)
+S154-2(72) breaks at 1975-12-01 (39.8) Fragment with less than 12 data DELETED
+S251(50) breaks at 1972-12-01 (39.4)
+S257-2(78) breaks at 2000-12-01 (35.6)
+
+Update number of series:  90 + 4 = 94 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S246-4(91) 1979-01-01: 235 -> 88.7 (13.8)
+
+Performing shift analysis on the 94 series...
+
+S156-2(65) breaks at 2006-01-01 (34.4) Fragment with less than 12 data DELETED
+S155(17) breaks at 1999-03-01 (34.0)
+S169-2(70) breaks at 1999-01-01 (29.4)
+S222-2(82) breaks at 1981-01-01 (28.8) Fragment with less than 12 data DELETED
+
+Update number of series:  94 + 2 = 96 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 96 series...
+
+S222-2(82) breaks at 1977-11-01 (28.4)
+S250(49) breaks at 1987-04-01 (24.0) Fragment with less than 12 data DELETED
+S155-2(95) breaks at 1998-12-01 (23.5) Fragment with less than 12 data DELETED
+S253-2(89) breaks at 1972-12-01 (22.9)
+S246-2(64) breaks at 2006-01-01 (21.7) Fragment with less than 12 data DELETED
+
+Update number of series:  96 + 2 = 98 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S222-3(97) 1972-01-01: 61 -> 176.7 (-8.27)
+
+Performing shift analysis on the 98 series...
+
+S253-2(89) breaks at 1983-03-01 (26.8)
+S255(53) breaks at 1972-12-01 (24.2)
+S124-3(87) breaks at 1945-12-01 (21.6) Fragment with less than 12 data DELETED
+S249-3(74) breaks at 1985-02-01 (20.9) Fragment with less than 12 data DELETED
+S125(7) breaks at 1987-12-01 (20.8)
+
+Update number of series:  98 + 3 = 101 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+S249-3(74) 1984-01-01: 93.5 -> 46.6 (10.31)
+
+Performing shift analysis on the 101 series...
+
+S125(7) breaks at 1989-04-01 (43.3)
+S248(47) breaks at 2000-03-01 (22.6)
+
+Update number of series:  101 + 2 = 103 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 103 series...
+
+S248-2(103) breaks at 1998-01-01 (21.8)
+S175(31) breaks at 1990-12-01 (20.1)
+
+Update number of series:  103 + 2 = 105 
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+(No detected outliers)
+
+Performing shift analysis on the 105 series...
+
+
+========== STAGE 3 (Final computation of all missing data) ==========
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+
+The following lines will have one of these formats:
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+  Iteration Max.data.difference (Station_code)
+S153(15) 1984-01-01: 87.468 -> 180.7 (-8.19)
+S160(22) 1984-01-01: 191.92 -> 415.8 (-9.16)
+S237(41) 1984-01-01: 194.759 -> 341.2 (-8.18)
+S236-2(67) 1987-01-01: 77 -> 213.1 (-8.11)
+S163(25) 1984-01-01: 110.199 -> 310.3 (-8.14)
+2 200.063 (S163)
+3 28.978 (S160)
+4 -2.342 (S202)
+5 -1.963 (S202)
+6 -1.666 (S202)
+7 -1.433 (S202)
+8 -1.246 (S202)
+9 -1.095 (S202)
+10 -0.969 (S202)
+11 -0.863 (S202)
+12 -0.772 (S202)
+13 -0.694 (S202)
+14 -0.624 (S202)
+15 -0.563 (S202)
+16 -0.509 (S202)
+17 -0.46 (S202)
+18 -0.417 (S202)
+19 -0.377 (S202)
+20 -0.342 (S202)
+21 -0.31 (S202)
+22 -0.281 (S202)
+23 -0.259 (S222-2)
+24 -0.248 (S222-2)
+25 -0.238 (S222-2)
+26 -0.227 (S222-2)
+27 -0.217 (S222-2)
+28 -0.208 (S222-2)
+29 -0.199 (S257-2)
+30 -0.191 (S257-2)
+31 -0.183 (S257-2)
+32 -0.176 (S257-2)
+33 -0.169 (S257-2)
+34 -0.162 (S257-2)
+35 -0.155 (S257-2)
+36 -0.149 (S257-2)
+37 0.144 (S248-2)
+38 0.14 (S248-2)
+39 0.135 (S248-2)
+40 0.131 (S248-2)
+41 0.127 (S248-2)
+42 0.123 (S248-2)
+43 0.119 (S248-2)
+44 0.115 (S248-2)
+45 0.112 (S248-2)
+46 0.108 (S248-2)
+47 0.105 (S248-2)
+48 0.102 (S248-2)
+49 0.099 (S248-2)
+50 0.096 (S248-2)
+51 0.093 (S248-2)
+52 0.09 (S248-2)
+53 0.087 (S248-2)
+54 0.084 (S248-2)
+55 0.082 (S248-2)
+56 0.079 (S248-2)
+57 0.077 (S248-2)
+58 0.074 (S248-2)
+59 0.072 (S248-2)
+60 0.07 (S248-2)
+61 0.067 (S248-2)
+62 0.065 (S248-2)
+63 0.063 (S248-2)
+64 0.061 (S248-2)
+65 0.059 (S248-2)
+66 0.058 (S248-2)
+67 0.056 (S248-2)
+68 0.054 (S248-2)
+69 0.052 (S248-2)
+70 0.051 (S248-2)
+71 0.049 (S248-2)
+
+Last series readjustment (please, be patient...)
+
+======== End of the homogenization process, after 5.75 mins 
+
+----------- Final computations:
+
+ACmx: Station maximum absolute autocorrelations of anomalies
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+ 0.0700  0.1725  0.2300  0.2511  0.3200  0.5900       3 
+
+SNHT: Standard normal homogeneity test (on anomaly series)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.200   5.300   7.700   9.276  13.200  20.800 
+
+RMSE: Root mean squared error of the estimated data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  2.837  10.151  15.266  16.944  21.987  60.828 
+
+POD: Percentage of original data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    1.0    19.0    57.0    57.5    99.0   100.0 
+
+    ACmx SNHT RMSE POD Code   Name                                   
+1   0.14  3.6 19.3 100 S119   El Rodeo_El Rodeo                      
+2   0.13  7.6 35.6  99 S120   Humaya_Humaya                          
+3   0.12 19.0 23.3  99 S121   Las Piedras Blancas_Las Piedras Blancas
+4   0.10  7.8 16.3  99 S122   Los Castillos_Los Castillos            
+5   0.26  2.4 17.0  13 S123   Los Varelas_Los Varelas                
+6   0.18  6.0 15.3  18 S124   Singuil_Singuil                        
+7   0.23 10.1  9.7  35 S125   Colpes_Colpes                          
+8   0.21  6.2 14.4  99 S126   Huaycama_Huaycama                      
+9   0.15 12.8 13.2 100 S128   La Rinconada_La Rinconada              
+10  0.11 20.5 21.2  99 S129   Las Juntas_Las Juntas                  
+11  0.51  7.2 18.0  19 S149   Agua Salada_Agua Salada                
+12  0.18  8.2 23.1 100 S150   Amano_Amano                            
+13  0.12  6.0 26.1 100 S151   El Potrero_El Potrero                  
+14  0.15  7.1 15.9 100 S152   Villa Villa_Villa Villa                
+15  0.23 19.3 11.1  99 S153   Belen_Belen                            
+16  0.22 18.9 11.9  52 S154   Corral Quemado_Corral Quemado          
+17  0.18  6.3  9.9  22 S155   Culampaja_Culampaja                    
+18  0.30 11.9  4.2  13 S156   Jacipunco_Jacipunco                    
+19  0.16 13.2  7.8  99 S157   La Cienaga_La Cienaga                  
+20  0.15  5.7 13.1  99 S158   La Toma_La Toma                        
+21  0.30 20.8 18.8 100 S159   Los Nacimientos_Los Nacimientos        
+22  0.15 14.6 23.4  99 S160   Papa Chacra_Papa Chacra                
+23  0.23 16.4 38.1  19 S161   Pozo de Piedra_Pozo de Piedra          
+24  0.12  3.5 27.3  99 S162   Quimivil_Quimivil                      
+25  0.45 15.0 23.8  99 S163   Laguna Blanca_Laguna Blanca            
+26  0.30  6.6 15.9  99 S164   Las Barrancas_Las Barrancas            
+27  0.17  5.6 16.5  99 S165   Villa Vil_Villa Vil                    
+28  0.26 15.0 12.2  17 S169   La Mesada_La Mesada                    
+29  0.17  9.1 27.8 100 S170   Las Palmas_Las Palmas                  
+30  0.37  5.3 25.3  18 S172   Los Nacimientos_Los Nacimientos2       
+31  0.26 19.2 27.5  33 S175   Trampasacha_Trampasacha                
+32  0.23  9.7 40.1 100 S186   El Rosario_El Rosario                  
+33  0.32  3.4 24.2  13 S202   La Aguadita_La Aguadita                
+34  0.23 20.4 33.9  46 S222   Balcozna_Balcozna                      
+35  0.17  1.6 16.7 100 S231   Joyango_Joyango                        
+36  0.07  5.4 13.8 100 S232   Michango_Michango                      
+37  0.23  9.5 17.7 100 S233   Mitquin_Mitquin                        
+38  0.09  7.3 13.4  99 S234   Rincon_Rincon                          
+39  0.39 14.8 15.4  99 S235   Campo de Frayle_Campo de Frayle        
+40  0.25 14.2 17.7  33 S236   El Cajón_El Cajón2                     
+41  0.21 14.5 17.5  99 S237   La Hoyada_La Hoyada                    
+42  0.18 11.3  8.4  99 S238   Pie del Médano_Pie del Médano          
+43  0.18 17.1 14.1  99 S239   Toroyaco_Toroyaco                      
+44  0.45  5.0 14.8  13 S245   Agua Clara_Agua Clara                  
+45  0.26  2.6  7.2  13 S246   Antinaco_Antinaco                      
+46  0.08  2.5  8.6  99 S247   Banda de Lucero_Banda de Lucero        
+47  0.33  3.5 26.1  21 S248   Costa de Reyes_Costa de Reyes          
+48  0.40 13.5  7.5  19 S249   Dique Andaluca_Dique Andaluca          
+49  0.21  7.9  7.5  38 S250   El Puesto_El Puesto                    
+50  0.19  5.0  4.3  57 S251   Fiambala_Fiambala                      
+51  0.25  9.0 13.4  14 S253   Medanitos_Medanitos                    
+52  0.20  9.6 12.8  99 S254   Punta del Agua_Punta del Agua          
+53  0.48  5.4 13.3  57 S255   Santa Rosa_Santa Rosa                  
+54  0.35 12.9 26.7  22 S256   Taton_Taton                            
+55  0.27  9.3 13.5  16 S257   Aguas Negras_Aguas Negras              
+56  0.25 15.5  7.9 100 S258   Cerro Negro_Cerro Negro2               
+57  0.20 16.7 15.4  99 S260   La Palca_La Palca                      
+58  0.28  8.9 10.3  57 S261   Las Papas_Las Papas                    
+59  0.18  7.3 11.4 100 S262   Palo Blanco_Palo Blanco                
+60  0.19 10.1 14.0  20 S263   Rincón de Médano_Rincón de Médano      
+61  0.15 20.1  9.5  99 S264   Villa Luján_Villa Luján                
+62  0.23 13.0 15.0  20 S249-2 Dique Andaluca_Dique Andaluca-2        
+63  0.36  5.9 25.4  73 S172-2 Los Nacimientos_Los Nacimientos2-2     
+64  0.34  2.2 14.8  17 S246-2 Antinaco_Antinaco-2                    
+65  0.16 18.0  9.0  86 S156-2 Jacipunco_Jacipunco-2                  
+66  0.19  5.2  9.5  67 S256-2 Taton_Taton-2                          
+67  0.23  7.7 15.9  66 S236-2 El Cajón_El Cajón2-2                   
+68  0.32  7.9  8.9  60 S250-2 El Puesto_El Puesto-2                  
+69  0.33 11.7 21.8  80 S149-2 Agua Salada_Agua Salada-2              
+70  0.47  7.4  8.4   4 S169-2 La Mesada_La Mesada-2                  
+71  0.35  6.9 42.4  87 S202-2 La Aguadita_La Aguadita-2              
+72  0.20 13.9  6.8  46 S154-2 Corral Quemado_Corral Quemado-2        
+73  0.30 11.2  7.5   9 S256-3 Taton_Taton-3                          
+74  0.20 13.6  4.7  58 S249-3 Dique Andaluca_Dique Andaluca-3        
+75  0.46  7.9 15.3  29 S245-2 Agua Clara_Agua Clara-2                
+76  0.25  1.2 17.6   6 S263-2 Rincón de Médano_Rincón de Médano-2    
+77  0.48  2.5 10.4   7 S172-3 Los Nacimientos_Los Nacimientos2-3     
+78    NA  4.0 18.1   3 S257-2 Aguas Negras_Aguas Negras-2            
+79  0.32 11.4 11.0  46 S161-2 Pozo de Piedra_Pozo de Piedra-2        
+80  0.43  5.6 32.7  12 S246-3 Antinaco_Antinaco-3                    
+81  0.20  9.6 25.9  69 S169-3 La Mesada_La Mesada-3                  
+82  0.36  4.2 34.0   4 S222-2 Balcozna_Balcozna-2                    
+83  0.10  1.7 15.4  86 S123-2 Los Varelas_Los Varelas-2              
+84  0.15 19.1 20.5  74 S124-2 Singuil_Singuil-2                      
+85  0.28  6.9 33.7  14 S161-3 Pozo de Piedra_Pozo de Piedra-3        
+86  0.13  5.1 25.7  18 S161-4 Pozo de Piedra_Pozo de Piedra-4        
+87  0.27  6.2  6.7   6 S124-3 Singuil_Singuil-3                      
+88  0.21  3.6 10.1  71 S263-3 Rincón de Médano_Rincón de Médano-3    
+89  0.26  5.2 11.6  29 S253-2 Medanitos_Medanitos-2                  
+90  0.19 10.4  4.5  42 S261-2 Las Papas_Las Papas-2                  
+91  0.17  7.6  8.1  57 S246-4 Antinaco_Antinaco-4                    
+92  0.59  4.5 18.1  57 S245-3 Agua Clara_Agua Clara-3                
+93  0.39  5.5  2.8  42 S251-2 Fiambala_Fiambala-2                    
+94  0.33  6.7 24.7  79 S257-3 Aguas Negras_Aguas Negras-3            
+95  0.25  4.7  8.7  77 S155-2 Culampaja_Culampaja-2                  
+96  0.28  7.6 12.2   8 S169-4 La Mesada_La Mesada-4                  
+97  0.24 18.2 15.8  49 S222-3 Balcozna_Balcozna-3                    
+98  0.47  3.3  7.0  42 S253-3 Medanitos_Medanitos-3                  
+99  0.38 15.4 11.5  13 S253-4 Medanitos_Medanitos-4                  
+100 0.32  5.3 10.2  42 S255-2 Santa Rosa_Santa Rosa-2                
+101 0.15  6.7 10.8  62 S125-2 Colpes_Colpes-2                        
+102   NA  1.3 22.8   1 S125-3 Colpes_Colpes-3                        
+103   NA  4.9 60.8   2 S248-2 Costa de Reyes_Costa de Reyes-2        
+104 0.23 11.2 20.0  76 S248-3 Costa de Reyes_Costa de Reyes-3        
+105 0.16 17.0 22.0  66 S175-2 Trampasacha_Trampasacha-2              
+
+----------- Generated output files: -------------------------
+
+Prcp-3_1941-2015.txt :  This text output 
+Prcp-3_1941-2015_out.csv :  List of corrected outliers 
+Prcp-3_1941-2015_brk.csv :  List of corrected breaks 
+Prcp-3_1941-2015.pdf :  Diagnostic graphics 
+Prcp-3_1941-2015.rda :  Homogenization results. Postprocess with (examples):
+   dahstat('Prcp-3',1941,2015) #get averages in file Prcp-3_1941-2015-me.csv 
+   dahstat('Prcp-3',1941,2015,stat='tnd') #get OLS trends and their p-values 
+   dahgrid('Prcp-3',1941,2015,grid=YOURGRID) #get homogenized grids 
+   ... (See other options in the package documentation)
+

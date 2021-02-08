@@ -1,0 +1,226 @@
+
+HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
+
+=========== Homogenization of Prcp-1, 1941-2015. (Tue Nov 24 19:29:09 2020)
+
+Parameters: varcli=Prcp-1 anyi=1941 anyf=2015 suf=NA nm=NA nref=10,10,3 std=2 swa=NA ndec=1 dz.max=5 dz.min=-5 wd=100,100,50 snht1=0 snht2=0 tol=0.02 maxdif=0.05 mxdif=0.05 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=4 ini=NA na.strings=NA vmin=NA vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=TRUE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
+
+Data matrix: 900 data x 371 stations
+Computing inter-station distances:  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  130  131  132  133  134  135  136  137  138  139  140  141  142  143  144  145  146  147  148  149  150  151  152  153  154  155  156  157  158  159  160  161  162  163  164  165  166  167  168  169  170  171  172  173  174  175  176  177  178  179  180  181  182  183  184  185  186  187  188  189  190  191  192  193  194  195  196  197  198  199  200  201  202  203  204  205  206  207  208  209  210  211  212  213  214  215  216  217  218  219  220  221  222  223  224  225  226  227  228  229  230  231  232  233  234  235  236  237  238  239  240  241  242  243  244  245  246  247  248  249  250  251  252  253  254  255  256  257  258  259  260  261  262  263  264  265  266  267  268  269  270  271  272  273  274  275  276  277  278  279  280  281  282  283  284  285  286  287  288  289  290  291  292  293  294  295  296  297  298  299  300  301  302  303  304  305  306  307  308  309  310  311  312  313  314  315  316  317  318  319  320  321  322  323  324  325  326  327  328  329  330  331  332  333  334  335  336  337  338  339  340  341  342  343  344  345  346  347  348  349  350  351  352  353  354  355  356  357  358  359  360  361  362  363  364  365  366  367  368  369  370
+
+
+========== STAGE 3 (Final computation of all missing data) ==========
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+
+The following lines will have one of these formats:
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+  Iteration Max.data.difference (Station_code)
+2 0 (S43)
+
+Last series readjustment (please, be patient...)
+
+======== End of the missing data filling process, after 2.01 mins 
+
+----------- Final computations:
+
+ACmx: Station maximum absolute autocorrelations of anomalies
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0500  0.1000  0.1300  0.1453  0.1700  0.5200 
+
+SNHT: Standard normal homogeneity test (on anomaly series)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.60    7.20   12.50   16.73   21.75  164.60 
+
+RMSE: Root mean squared error of the estimated data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  9.966  18.617  23.054  23.636  27.289  53.665 
+
+POD: Percentage of original data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    100     100     100     100     100     100 
+
+    ACmx SNHT RMSE POD Code Name                                              
+1   0.15  6.3 26.4 100 S43  La Rioja Aero_La Rioja                            
+2   0.14 60.8 25.2 100 S44  Chepes Aero_Chepes                                
+3   0.15  9.4 20.7 100 S45  Chamical Aero_Chamical                            
+4   0.11  7.2 19.2 100 S46  Las Vizcacheras INTA_Las Vizcacheras INTA         
+5   0.09 23.6 34.0 100 S47  Bandera_Bandera                                   
+6   0.07  8.8 26.6 100 S48  Santiago del Estero Aero_Santiago del Estero      
+7   0.16 28.0 36.4 100 S49  Don Miguel_Quebrachos                             
+8   0.12 12.5 39.7 100 S50  Añatuya_Añatuya                                   
+9   0.11  7.3 27.1 100 S51  Abra Grande_Abra Grande                           
+10  0.15 16.9 17.8 100 S52  Arraga_Araga                                      
+11  0.11  9.1 21.6 100 S53  Argentina_Argentina                               
+12  0.08 13.5 25.0 100 S54  Atamisqui_Atamisqui                               
+13  0.07 16.2 19.2 100 S55  Averias_Averias                                   
+14  0.19 23.3 27.2 100 S56  Brea Pozo_Brea Pozo                               
+15  0.15 20.7 30.6 100 S57  Choya_Choya                                       
+16  0.08  5.7 19.9 100 S58  Clodomira_Clodomira                               
+17  0.20 29.8 28.0 100 S60  Colonia Dora_Colonia Dora                         
+18  0.13  6.9 18.7 100 S61  Colonia el Simbolar_Colonia el Simbolar           
+19  0.10  8.4 35.9 100 S62  Fortín Inca_Fortín Inca                           
+20  0.14 10.8 33.7 100 S63  Frías_Frías                                       
+21  0.12  5.6 27.8 100 S64  Garza_Garza                                       
+22  0.12 13.4 30.8 100 S65  Girardet_Girardet                                 
+23  0.09  4.8 19.6 100 S66  Gramilla_Gramilla                                 
+24  0.10  3.3 33.4 100 S67  Guardia Escolta_Guardia Escolta                   
+25  0.13 32.0 19.6 100 S68  Huritu Huasi_Huritu Huasi                         
+26  0.18  9.5 23.3 100 S69  La Aurora_La Aurora                               
+27  0.14  8.7 29.7 100 S70  La Banda_La Banda                                 
+28  0.13  7.7 24.3 100 S71  La Cañada_La Cañada                               
+29  0.09  3.3 23.4 100 S72  La María INTA_La María INTA                       
+30  0.12  2.5 23.5 100 S73  La Nena_La Nena                                   
+31  0.18 22.9 24.9 100 S74  La Punta_La Punta                                 
+32  0.12  3.1 25.9 100 S75  La Reconquista_La Reconquista                     
+33  0.11  4.2 32.0 100 S76  La Romelia_La Romelia                             
+34  0.11 13.6 17.9 100 S77  Lajita Mauta_Lajita Mauta                         
+35  0.09 10.4 26.5 100 S78  Laprida_Laprida                                   
+36  0.14 10.4 24.0 100 S79  Lavalle_Lavalle2                                  
+37  0.11 30.4 35.4 100 S80  Los Juríes_Los Juríes                             
+38  0.21  9.3 25.8 100 S81  Los Linares_Los Linares                           
+39  0.11 13.0 48.6 100 S82  Los Piripintos_Los Piripintos                     
+40  0.10 16.9 31.6 100 S83  Los Telares_Los Telares                           
+41  0.12  6.6 32.9 100 S84  Malbrán_Malbrán                                   
+42  0.08 10.0 18.8 100 S85  Matara_Matara                                     
+43  0.20 13.9 29.1 100 S86  Melero_Melero                                     
+44  0.10  8.1 17.9 100 S87  Nasalo_Nasalo                                     
+45  0.09 18.9 15.6 100 S88  Navarro_Navarro                                   
+46  0.14 24.7 44.6 100 S89  Nueva Esperanza_Nueva Esperanza                   
+47  0.14 32.3 30.5 100 S90  Ojo de Agua_Ojo de Agua                           
+48  0.09 19.2 30.0 100 S91  Pinto_Pinto                                       
+49  0.17 17.5 32.0 100 S92  Pozo Hondo_Pozo Hondo                             
+50  0.08  7.9 21.7 100 S93  Puna_Puna                                         
+51  0.09 17.1 36.9 100 S94  Quimili_Quimili                                   
+52  0.10  8.2 31.8 100 S95  Roversi_Roversi                                   
+53  0.15 22.2 31.2 100 S96  San Pedro_San Pedro                               
+54  0.12  5.2 20.0 100 S97  Santa Lucía (Isla Baja)_Santa Lucía (Isla Baja)   
+55  0.10 11.2 27.1 100 S98  Santos Lugares_Santos Lugares                     
+56  0.08 17.6 18.2 100 S100 Simbol Bajo_Simbol Bajo                           
+57  0.14 37.5 33.1 100 S101 Sumampa_Sumampa                                   
+58  0.16 32.8 32.1 100 S102 Suncho Corral_Suncho Corral                       
+59  0.13  6.5 19.3 100 S103 Tacañita_Tacañita                                 
+60  0.14 23.2 30.5 100 S104 Termas de Río Hondo_Termas de Río Hondo           
+61  0.13 10.6 40.7 100 S105 Tintina_Tintina                                   
+62  0.11 17.4 18.1 100 S106 Titun Punco_Titun Punco                           
+63  0.12  5.3 19.0 100 S107 Tobas_Tobas                                       
+64  0.12 20.0 29.5 100 S108 Vielas_Vielas                                     
+65  0.11 11.9 26.4 100 S109 Villa Gusayán_Villa Gusayán                       
+66  0.10  7.7 28.1 100 S110 Villa Salavina_Villa Salavina                     
+67  0.19 54.6 28.1 100 S111 Villa San Martín_Loreto                           
+68  0.12 21.0 20.6 100 S112 Zanjón_Zanjón                                     
+69  0.07 14.5 25.9 100 S113 Villa Mercedes INTA_Villa Mercedes                
+70  0.07  8.7 24.2 100 S114 Villa Reynolds Aero_Villa Reynolds                
+71  0.18 17.4 30.2 100 S115 Santa Rosa del Conlara Aero_Santa Rosa del Conlara
+72  0.13  9.8 30.5 100 S116 San Luis Aero_San Luis                            
+73  0.27 16.7 19.6 100 S117 Sumalao INTA_Sumalao                              
+74  0.16 19.6 20.2 100 S118 Catamarca Aero_Catamarca                          
+75  0.25 14.4 19.4 100 S127 La Puerta_La Puerta                               
+76  0.10 26.2 23.3 100 S130 Ancasti_Ancasti                                   
+77  0.12  6.9 14.1 100 S131 Anquincila_Anquincila                             
+78  0.14 13.4 13.5 100 S132 Bella Vista_Bella Vista                           
+79  0.14  9.0 21.8 100 S133 Candelaria_Candelaria                             
+80  0.15 38.8 24.1 100 S134 Cañada De Ipizca_Cda. De Ipizca                   
+81  0.14  2.8 23.3 100 S135 Dique de Ipizca_Dique de Ipizca                   
+82  0.19  3.9 21.3 100 S136 El Taco_El Taco                                   
+83  0.09  3.6 25.0 100 S137 Las Ruditas_Las Ruditas                           
+84  0.25 27.7 22.2 100 S138 Los Corrales Viejos_Los Corrales Viejos           
+85  0.14  5.4 22.1 100 S139 Rincon de Ipizca_Rincon de Ipizca                 
+86  0.10  9.1 26.0 100 S140 San Francisco_San Francisco                       
+87  0.20 24.6 17.3 100 S141 San José_San José                                 
+88  0.27 59.4 18.4 100 S142 Tacana_Tacana                                     
+89  0.21 11.7 20.6 100 S143 Yerba Buena_Yerba Buena                           
+90  0.11 16.0 19.8 100 S144 Casa Armada_Casa Armada                           
+91  0.12  8.3 20.9 100 S145 El Corralito_El Corralito                         
+92  0.16 13.0 21.5 100 S146 La Estancia_La Estancia                           
+93  0.13  3.1 19.6 100 S147 La Majada_La Majada                               
+94  0.18  3.7 23.6 100 S148 Las Ensenadas_Las Ensenadas                       
+95  0.13  4.3 15.9 100 S166 Carranza_Carranza                                 
+96  0.18 23.7 20.7 100 S167 Chumbicha_Chumbicha                               
+97  0.27 86.6 23.1 100 S168 Concepción_Concepción                             
+98  0.14 10.6 16.7 100 S171 Los Angeles_Los Angeles                           
+99  0.16  5.2 13.5 100 S173 San Martín_San Martín                             
+100 0.20 31.5 17.3 100 S174 Sisi Huasi_Sisi Huasi                             
+101 0.19  8.2 16.7 100 S176 Villa los Angeles_Villa los Angeles               
+102 0.30  4.0 17.6 100 S177 Colonia del Valle_Colonia del Valle               
+103 0.10  4.5 13.9 100 S178 Los Divisaderos_Los Divisaderos                   
+104 0.12  2.2 13.4 100 S179 Puesto Nuevo_Puesto Nuevo                         
+105 0.20 12.2 12.6 100 S180 Capital_Capital                                   
+106 0.13 12.2 12.2 100 S181 El Jumeal_El Jumeal                               
+107 0.12 10.8 10.6 100 S182 Las Rejas_Las Rejas                               
+108 0.08  9.8 25.7 100 S183 El Alto_El Alto                                   
+109 0.12  2.0 20.3 100 S184 El Arroyito_El Arroyito                           
+110 0.29 30.6 31.4 100 S185 El Lindero_El Lindero                             
+111 0.11  5.1 23.3 100 S187 Estancia Guaycohondo_Estancia Guaycohondo         
+112 0.14  4.4 31.0 100 S188 Infanson_Infanson                                 
+113 0.29  8.1 39.0 100 S189 La Chacrita_La Chacrita                           
+114 0.25  8.9 29.6 100 S190 La Estancia_La Estancia2                          
+115 0.18 13.0 15.1 100 S191 La Estanzuela_La Estanzuela                       
+116 0.18 17.1 19.9 100 S192 Los Cisternas_Los Cisternas                       
+117 0.15 13.7 24.6 100 S193 Los Corrales_Los Corrales                         
+118 0.15  4.9 22.6 100 S194 Molle Pampa_Molle Pampa                           
+119 0.14  3.3 24.9 100 S195 Pto Figueroa_Pto Figueroa                         
+120 0.19 28.4 25.8 100 S196 San Vicente_San Vicente                           
+121 0.15  3.7 19.8 100 S197 Vilisman_Vilisman                                 
+122 0.28  4.5 27.4 100 S198 Albigasta O.S.C._Albigasta O.S.C.                 
+123 0.15  8.3 12.8 100 S199 Collnia de Achaco_Collnia de Achaco               
+124 0.28 27.3 22.9 100 S200 Dique Collagasta_Dique Collagasta                 
+125 0.21  5.3 17.9 100 S201 El Sauce_El Sauce                                 
+126 0.12  6.5 19.6 100 S203 Loma Sola_Loma Sola                               
+127 0.15 13.9 20.8 100 S204 Dique Montegasta_Dique Montegasta                 
+128 0.12  8.4 17.0 100 S205 El Aybal_El Aybal                                 
+129 0.11  3.5 18.0 100 S206 El Divisadero_El Divisadero                       
+130 0.32 44.2 23.9 100 S207 El Talar_El Talar                                 
+131 0.18 20.8 18.6 100 S208 Esquiu_Esquiu                                     
+132 0.12  2.3 14.5 100 S209 La Guardia_La Guardia                             
+133 0.12 22.2 17.2 100 S210 Las Peñas_Las Peñas                               
+134 0.18 17.3 14.2 100 S211 Los Puestos_Los Puestos                           
+135 0.25 42.2 19.2 100 S212 Ramblones_Ramblones                               
+136 0.18  5.5 16.7 100 S213 Recreo_Recreo                                     
+137 0.18 12.1 16.8 100 S214 Rio la Dorada_Rio la Dorada                       
+138 0.16  8.4 23.7 100 S215 San Antonia (La Paz)_San Antonia (La Paz)         
+139 0.22 13.4 16.8 100 S216 Anjuli_Anjuli                                     
+140 0.12 12.9 19.5 100 S217 Babiano_Babiano                                   
+141 0.21 23.0 25.5 100 S218 Estancia Albigasta_Estancia Albigasta             
+142 0.22 13.0 16.6 100 S219 Icaño_Icaño                                       
+143 0.43  2.6 22.4 100 S220 Quiros_Quiros                                     
+144 0.12  5.7 18.1 100 S221 Amadores_Amadores                                 
+145 0.10  4.3 14.6 100 S223 La Bajada_La Bajada                               
+146 0.19  7.7 33.0 100 S224 La Higuera_La Higuera                             
+147 0.18 22.6 20.3 100 S225 La Merced_La Merced                               
+148 0.14 14.9 29.7 100 S226 Las Lajas_Las Lajas                               
+149 0.17  7.2 30.1 100 S227 San Antonio_San Antonio                           
+150 0.18 16.8 22.9 100 S228 Dique Sumampa_Dique Sumampa                       
+151 0.29 26.2 33.2 100 S229 La Viña_La Viña                                   
+152 0.10  7.3 13.4 100 S230 Palo Labrado_Palo Labrado                         
+153 0.11  7.7 24.4 100 S240 Dique La Cañada_Dique La Cañada                   
+154 0.23  2.3 26.5 100 S241 S.P. de Guayasan_S.P. de Guayasan                 
+155 0.21  8.4 18.4 100 S242 Alijilan (Vivero)_Alijilan (Vivero)               
+156 0.22 14.0 26.3 100 S243 Bdo. De Ovanta_Bdo. De Ovanta                     
+157 0.09  7.5 15.5 100 S244 Lavalle_Lavalle                                   
+158 0.42  3.4 13.2 100 S252 Los Bulacios_Los Bulacios                         
+159 0.37 26.5 12.9 100 S259 El Durazno_El Durazno                             
+160 0.12 20.6 16.1 100 S265 El Portezuelo_El Portezuelo                       
+161 0.19  7.4 10.7 100 S266 Huaycama_Huaycama2                                
+162 0.11 12.3 22.8 100 S267 Nana Huasi_Nana Huasi                             
+163 0.09  5.8 27.0 100 S268 La Florida_La Florida                             
+164 0.09 15.2 39.8 100 S269 Estancia Los Potreros_Río Ceballos                
+165 0.10 13.4 24.8 100 S273 Estancia La Sofía_Las Vertientes                  
+166 0.07 12.8 27.0 100 S274 Estancia el 23_Huinca Renancó                     
+ [ reached 'max' / getOption("max.print") -- omitted 205 rows ]
+
+----------- Generated output files: -------------------------
+
+Prcp-1_1941-2015.txt :  This text output 
+Prcp-1_1941-2015_out.csv :  List of corrected outliers 
+Prcp-1_1941-2015_brk.csv :  List of corrected breaks 
+Prcp-1_1941-2015.pdf :  Diagnostic graphics 
+Prcp-1_1941-2015.rda :  Homogenization results. Postprocess with (examples):
+   dahstat('Prcp-1',1941,2015) #get averages in file Prcp-1_1941-2015-me.csv 
+   dahstat('Prcp-1',1941,2015,stat='tnd') #get OLS trends and their p-values 
+   dahgrid('Prcp-1',1941,2015,grid=YOURGRID) #get homogenized grids 
+   ... (See other options in the package documentation)
+

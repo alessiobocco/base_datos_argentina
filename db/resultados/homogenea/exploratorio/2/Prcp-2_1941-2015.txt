@@ -1,0 +1,191 @@
+
+HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
+
+=========== Homogenization of Prcp-2, 1941-2015. (Tue Nov 24 19:31:10 2020)
+
+Parameters: varcli=Prcp-2 anyi=1941 anyf=2015 suf=NA nm=NA nref=10,10,3 std=2 swa=NA ndec=1 dz.max=5 dz.min=-5 wd=100,100,50 snht1=0 snht2=0 tol=0.02 maxdif=0.05 mxdif=0.05 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=4 ini=NA na.strings=NA vmin=NA vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=TRUE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
+
+Data matrix: 900 data x 132 stations
+Computing inter-station distances:  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  130  131
+
+
+========== STAGE 3 (Final computation of all missing data) ==========
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+
+The following lines will have one of these formats:
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+  Iteration Max.data.difference (Station_code)
+2 0 (S1)
+
+Last series readjustment (please, be patient...)
+
+======== End of the missing data filling process, after 38.39 secs 
+
+----------- Final computations:
+
+ACmx: Station maximum absolute autocorrelations of anomalies
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0600  0.0900  0.1100  0.1223  0.1300  0.4000 
+
+SNHT: Standard normal homogeneity test (on anomaly series)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.80    6.00   10.65   15.64   19.60  113.60 
+
+RMSE: Root mean squared error of the estimated data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  16.62   24.57   27.92   30.31   32.66   76.78 
+
+POD: Percentage of original data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    100     100     100     100     100     100 
+
+    ACmx SNHT  RMSE POD Code Name                                       
+1   0.08  11.9 39.4 100 S1   La Lucila_San Cristóbal                    
+2   0.10  34.6 25.3 100 S2   Escuela Nº 486_Carcarañá                   
+3   0.09   9.4 32.7 100 S3   Sociedad Rural Rufino_Rufino               
+4   0.07   8.2 53.1 100 S4   Margarita_Margarita                        
+5   0.08  11.8 29.5 100 S5   María Suana_María Suana                    
+6   0.08  10.3 26.0 100 S6   AER Las Rosas_Las Rosas                    
+7   0.06  13.8 32.6 100 S7   AER Carlos Pellegrini_Carlos Pellegrini    
+8   0.11  10.6 35.5 100 S8   AER Casilda_Casilda                        
+9   0.10  19.6 30.9 100 S9   Estancia Loreto_Maggiolo                   
+10  0.16   4.4 27.8 100 S10  Piamonte_Piamonte                          
+11  0.07   4.7 30.7 100 S11  Ceres Aero_Ceres                           
+12  0.20  14.1 29.9 100 S12  Sunchales Aero_Sunchales                   
+13  0.07   3.3 37.2 100 S13  Rafaela INTA_Rafaela                       
+14  0.12   4.3 32.2 100 S14  Rafaela Aero_Rafaela                       
+15  0.12   6.3 33.4 100 S15  Sauce Viejo Aero_Sauce Viejo               
+16  0.13  13.5 30.9 100 S16  El Trébol Aero_El Trebol                   
+17  0.12   6.0 23.8 100 S17  Venado Tuerto Aero_Venado Tuerto           
+18  0.12   9.9 58.4 100 S18  Reconquista Aero_Reconquista               
+19  0.13   1.5 27.5 100 S19  Oliveros INTA_Oliveros                     
+20  0.11  10.0 23.9 100 S20  UNR_Zavalla                                
+21  0.09  24.2 22.6 100 S21  Cooperativa San Guillermo_San Guillermo    
+22  0.13  17.1 31.4 100 S23  Rosario Aero_Rosario                       
+23  0.18  29.3 39.6 100 S24  Pergamino INTA_Pergamino                   
+24  0.10   7.9 34.3 100 S25  Cosufi_General Pinto                       
+25  0.18   8.3 38.3 100 S26  Estancia San Carlos_Bolívar                
+26  0.29   0.8 76.8 100 S27  Estnacia La Cassina_Diareaux               
+27  0.07  11.1 31.7 100 S28  Sociedad Rural Rivadavia_Rivadavia         
+28  0.10   5.4 36.4 100 S29  Sociedad Rural Henderson_Henderson         
+29  0.40   4.7 70.6 100 S30  General Villegas INTA_General Villegas     
+30  0.15   6.8 42.5 100 S31  Sociedad Rural Roque perez_Roque Perez     
+31  0.07  16.4 40.6 100 S32  Pigue Aero_Pigüe                           
+32  0.29   1.4 76.4 100 S33  Bolívar Aero_Bolivar                       
+33  0.12   5.6 25.2 100 S34  AER Lincoln_Lincoln                        
+34  0.12   5.8 32.9 100 S35  Cañada Seca_Cañada Seca                    
+35  0.10  31.1 23.3 100 S36  AER 9 de Julio_9 de Julio                  
+36  0.09   3.1 27.5 100 S37  Campo Ottino_Cañada Seca                   
+37  0.15  10.0 32.4 100 S38  Trenque Lauquen Aero_Trenque Lauquen       
+38  0.06   8.9 22.5 100 S39  9 de Julio Aero_9 de Julio                 
+39  0.06  10.2 35.3 100 S40  Junin Aero_Junín                           
+40  0.12  14.4 31.6 100 S41  AER San Pedro_San Pedro                    
+41  0.10   5.0 32.9 100 S42  Pehuajó Aero_Pehuajo                       
+42  0.12   5.6 28.6 100 S59  Colonia Alpina_Colonia Alpina              
+43  0.10   8.5 44.0 100 S99  Selva_Selva                                
+44  0.10   8.4 24.5 100 S270 Estancia La Magdalena_La Carlota           
+45  0.07  10.8 37.1 100 S271 Cooperativa Sudeste_Bell Ville             
+46  0.15  24.8 25.2 100 S272 Estancia La Vizcachera_San Joaquín         
+47  0.12  18.6 26.1 100 S276 Estancia Los 13_Reducción                  
+48  0.15  29.8 27.4 100 S277 Italo_Italo                                
+49  0.13  35.0 28.7 100 S278 Isla Verde_Isla Verde                      
+50  0.19  38.5 29.2 100 S280 Cacique Bravo_Las Acequias                 
+51  0.13  46.2 31.4 100 S281 El Montecito_Santa Eufemia                 
+52  0.07   6.0 31.5 100 S283 Levalle_Levalle                            
+53  0.11   4.3 27.7 100 S284 La Cesira_La Cesira                        
+54  0.12  39.2 39.1 100 S286 La Amalia_La Amalia                        
+55  0.17  23.5 34.2 100 S287 Pueblo Italiano_Pueblo Italiano            
+56  0.11  10.7 22.6 100 S290 AER Brinkmann_Brinkmann                    
+57  0.12  58.3 31.9 100 S291 UTN San Francisco_San Francisco            
+58  0.32   4.0 64.6 100 S293 AER Noetinger_Noetinger                    
+59  0.10  14.3 25.9 100 S296 AER La Carlota_La Carlota                  
+60  0.13   8.6 29.0 100 S297 AGD_La Carlota                             
+61  0.08   7.2 26.8 100 S298 AER Canals_Canals                          
+62  0.12   6.0 32.7 100 S299 AER Ucacha_Ucacha                          
+63  0.07   9.0 29.7 100 S300 AER Arias_Arias                            
+64  0.09   5.2 35.7 100 S301 AER Justiniano Posse_Justiniano Posse      
+65  0.11  13.3 27.7 100 S303 AER Marcos Juarez_Marcos Juárez            
+66  0.09  11.0 22.3 100 S305 Estancia Don Carlos_Alejo Ledesma          
+67  0.12  15.9 31.6 100 S306 Alejos Ledesma_Alejo Ledesma               
+68  0.10   5.9 28.0 100 S308 AER Buchardo_Buchardo                      
+69  0.10   2.4 25.9 100 S310 EAS Ambrosio Olmos_San Ambrosio            
+70  0.10  22.4 28.8 100 S312 Bengolea_Bengolea                          
+71  0.16  19.6 25.5 100 S314 Marcos Juarez INTA_Marcos Juárez           
+72  0.06   4.9 32.3 100 S317 Rio Cuarto Aero_Rio Cuarto                 
+73  0.10  26.8 29.0 100 S318 Laboulaye Aero_Laboulaye                   
+74  0.11  29.2 32.0 100 S319 Marcos Juarez Aero_Marcos Juárez           
+75  0.23  39.8 29.1 100 S323 Hermanos Tognato_Villa Herminia            
+76  0.07   6.6 32.9 100 S335 El Fortín_El Fortín                        
+77  0.10  23.4 32.9 100 S359 Morteros_Morteros                          
+78  0.12   8.4 24.8 100 S370 Balnearia_Balnearia                        
+79  0.10   6.8 32.7 100 S385 El Tío_El Tío                              
+80  0.11  13.1 20.7 100 S410 San Antonio de Litin_San Antonia de Litin  
+81  0.14  17.6 23.2 100 S414 Ordoñez_Ordoñez                            
+82  0.09  17.3 23.6 100 S415 Justiniano Posse_Justiniano Posse          
+83  0.09   3.1 28.7 100 S417 Etruria_Etruria                            
+84  0.23   5.3 49.9 100 S419 Ucacha_Ucacha                              
+85  0.07   5.8 27.2 100 S421 Corral de Bustos_Corral de Bustos          
+86  0.11   6.6 19.1 100 S423 Arias_Arias                                
+87  0.07  13.9 18.5 100 S425 Pavin_Pavin                                
+88  0.11  14.3 19.6 100 S426 Pacheco de Melo_Pacheco de Melo            
+89  0.09   7.9 21.0 100 S434 San Joaquín_San Joaquín                    
+90  0.09  11.9 23.4 100 S435 Bouchard_Bouchard                          
+91  0.10   7.7 22.8 100 S438 Burmeister_Burmeister                      
+92  0.13   6.5 16.6 100 S442 Alejandro Roca_Alejandro Roca              
+93  0.15  10.8 28.5 100 S444 Cruz Alta_Cruz Alta                        
+94  0.12   3.0 22.8 100 S449 Freyre_Freyre                              
+95  0.09   7.8 24.5 100 S450 Las Varas_Las Varas                        
+96  0.19   4.0 25.2 100 S451 Porteña_Porteña                            
+97  0.11  17.4 22.4 100 S455 Idiázabal_Idiazabal                        
+98  0.16  10.6 29.9 100 S456 Monte Maíz_Monte Maíz                      
+99  0.15   9.3 25.9 100 S475 Las Varillas_Las Varillas                  
+100 0.15  27.1 17.3 100 S483 Huanchilla_Huanchilla                      
+101 0.21   6.6 23.2 100 S484 Olaeta_Olaeta                              
+102 0.13   3.4 27.9 100 S485 Guatimozín_Guatimozín                      
+103 0.13  15.3 27.0 100 S486 Leones_Leones                              
+104 0.08  14.3 21.1 100 S487 Monte Buey_Monte Buey                      
+105 0.17   5.8 22.2 100 S488 Melo_Melo                                  
+106 0.19   1.9 36.2 100 S489 Serrano_Serrano                            
+107 0.11   8.4 21.2 100 S497 Chazon_Chazon                              
+108 0.11   7.1 34.9 100 S503 Pascanas_Pascanas                          
+109 0.09  13.0 24.8 100 S520 Guatimozín ZR_Guatimozin                   
+110 0.12  30.6 30.1 100 S521 Las Totoras_Canals                         
+111 0.24 113.6 30.7 100 S524 Laboulaye_Laboulaye                        
+112 0.10  19.4 27.5 100 S526 General Pico Aero_General Pico             
+113 0.12  37.5 27.1 100 S532 Coronel Hilario Lagos_Coronel Hilario Lagos
+114 0.15  31.2 25.8 100 S533 Sarah_Sarah                                
+115 0.09  13.6 23.6 100 S534 Intendente Alvear_Intendente Alvear        
+116 0.14  31.2 23.8 100 S535 Ceballos_Ceballos                          
+117 0.10  10.0 23.0 100 S536 Ojeda_Ojeda                                
+118 0.10  39.8 26.1 100 S537 Falucho_Falucho                            
+119 0.11  56.2 23.1 100 S538 Alta Italia_Alta Italia                    
+120 0.13  20.4 25.3 100 S539 Embajador Martini_Embajador Martini        
+121 0.25  74.5 34.7 100 S543 Adolfo Von Praet_Adolfo Van Praet          
+122 0.10  31.2 24.2 100 S545 Vértiz_Vértiz                              
+123 0.09  10.7 24.6 100 S546 Speluzzi_Speluzzi                          
+124 0.11  17.6 25.5 100 S547 Trebolares_Trebolares                      
+125 0.20  40.2 28.2 100 S548 Dorila_Dorila                              
+126 0.11  22.8 26.7 100 S549 Agustoni_Agustoni                          
+127 0.11   3.8 24.8 100 S552 Trenel_Trenel                              
+128 0.06  20.7 24.3 100 S553 Metileo_Metileo                            
+129 0.06  23.4 26.6 100 S557 Monte Nievas_Monte Nievas                  
+130 0.07   4.5 27.2 100 S559 Villa Marisol _Villa Marisol               
+131 0.12  14.2 41.8 100 S562 Catrilo_Catrilo                            
+132 0.07   6.0 22.0 100 S565 Bernardo Larroude_Bernardo Larroude        
+
+----------- Generated output files: -------------------------
+
+Prcp-2_1941-2015.txt :  This text output 
+Prcp-2_1941-2015_out.csv :  List of corrected outliers 
+Prcp-2_1941-2015_brk.csv :  List of corrected breaks 
+Prcp-2_1941-2015.pdf :  Diagnostic graphics 
+Prcp-2_1941-2015.rda :  Homogenization results. Postprocess with (examples):
+   dahstat('Prcp-2',1941,2015) #get averages in file Prcp-2_1941-2015-me.csv 
+   dahstat('Prcp-2',1941,2015,stat='tnd') #get OLS trends and their p-values 
+   dahgrid('Prcp-2',1941,2015,grid=YOURGRID) #get homogenized grids 
+   ... (See other options in the package documentation)
+
